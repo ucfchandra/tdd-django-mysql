@@ -1,0 +1,8 @@
+name: 'Django test'
+description: 'test for containerized django app setup'
+runs:
+  using: 'podman'
+  image: 'Containerfile'
+  args:
+    - python manage.py runserver 0.0.0.0:8000
+
